@@ -112,14 +112,6 @@ _____.___.                            .__        ._.
 
 
                 Console.Write("[guess]> ");
-                string unparsedGuess = Console.ReadLine();
-                var isNumeric = int.TryParse(unparsedGuess, out _);
-                
-                if (!isNumeric)
-                {
-                    ExitGame("[!] unknown input!");
-                }
-
                 int guess = Convert.ToInt32(Console.ReadLine());
 
                 if (guess != randNum && i == 1)
